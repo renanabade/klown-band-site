@@ -116,7 +116,7 @@ html, body {
 /* Estilo para a seção Sobre a Banda */
 .about-section {
     padding: 40px 20px;
-    background-color: #212121; /* Cor de fundo suave */
+    background-color: rgb(10, 12, 13); /* Cor de fundo suave */
     text-align: center;
 }
 
@@ -142,7 +142,8 @@ html, body {
 /* Estilo para a seção Shows */
 #shows-section {
     padding: 20px;
-    background-color: #f9f9f9;
+    color: #fff;
+    background-color: rgb(12, 15, 17);
     box-sizing: border-box; /* Inclui padding no cálculo da largura */
     text-align: center;
 }
@@ -271,7 +272,7 @@ html {
 
 .events-section {
     padding: 20px;
-    background-color: #f9f9f9; /* Cor de fundo clara */
+    background-color: #060404; /* Cor de fundo clara */
 }
 
 .events-widget {
@@ -285,12 +286,12 @@ html {
     align-items: center; /* Alinha verticalmente */
     padding: 16px 20px; /* Ajusta o preenchimento */
     margin-bottom: 15px; /* Espaçamento entre eventos */
-    background-color: #f9f9f9; /* Cor de fundo branca para cada evento */
+    background-color: #000000; /* Cor de fundo branca para cada evento */
     font-family: "Avenir", Sans-serif;
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1.5px;
-    color: #333; /* Cor do texto padrão */
+    color: #ffffff; /* Cor do texto padrão */
     border-radius: 8px; /* Bordas arredondadas mais suaves */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
     position: relative; /* Para garantir o alinhamento correto dos itens */
@@ -336,7 +337,7 @@ html {
     text-decoration: none;
     text-align: center;
     background-color: #333;
-    color: #fff;
+    color: #ffffff;
     display: inline-block;
     margin-left: auto; /* Garante que o botão esteja no canto direito */
 }
