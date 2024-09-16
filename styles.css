@@ -201,18 +201,22 @@ button:hover {
     font-size: 0.875rem;
     display: none;
 }
-
 .footer {
     background-color: #000;
     color: #fff;
     padding: 15px;
     text-align: center;
+    position: relative
 }
 
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer-content {
@@ -221,16 +225,20 @@ button:hover {
     justify-content: center;
     gap: 10px;
     margin: 0;
+    flex: 1;
 }
 
 .footer-icon {
     position: absolute;
     left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     display: inline-block;
 }
 
 .footer-icon img {
     width: 80px;
+    height: auto;
     transition: transform 0.3s, fill 0.3s;
 }
 
@@ -252,6 +260,21 @@ button:hover {
     margin: 0;
 }
 
+@media (max-width: 768px) {
+    .footer-icon {
+        position: static;
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-icon img {
+        width: 60px;
+    }
+}
 .floating-icon {
     z-index: 2000000;
     position: fixed;
