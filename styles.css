@@ -1,28 +1,24 @@
-/* styles.css */
-
-/* Estilo para o cabeçalho */
 header {
-    background-color: #000; /* Cor de fundo do cabeçalho */
+    background-color: #000;
     padding: 10px 20px;
     color: #fff;
-    box-sizing: border-box; /* Inclui padding no cálculo da largura */
-    width: 100vw; /* Garante que o cabeçalho ocupe a largura total da viewport */
-    position: fixed; /* Fixa o cabeçalho no topo da página */
+    box-sizing: border-box;
+    width: 100vw;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    z-index: 1000;
 }
 
-/* Remove qualquer margem ou padding que possa estar causando scroll horizontal */
 html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Remove o scroll horizontal */
+    overflow-x: hidden;
 }
 
 .header-content {
     display: flex;
-    justify-content: space-between; /* Distribui os itens ao longo da linha */
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
@@ -54,24 +50,23 @@ html, body {
 }
 
 .instagram-icon {
-    color: #fff; /* Cor do ícone */
-    font-size: 24px; /* Tamanho do ícone */
+    color: #fff;
+    font-size: 24px;
     text-decoration: none;
 }
 
 .instagram-icon:hover {
-    color: #ccc; /* Cor do ícone ao passar o mouse */
+    color: #ccc;
 }
 
-/* Estilo para a seção de vídeo de fundo */
 .background-video-section {
     position: relative;
     overflow: hidden;
-    width: 100vw; /* Garante que a seção ocupe a largura total da viewport */
-    height: 100vh; /* Garante que a seção ocupe a altura total da viewport */
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Inclui padding no cálculo da largura */
+    box-sizing: border-box;
 }
 
 .background-video-container {
@@ -89,7 +84,7 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garante que o vídeo cubra a área sem distorção */
+    object-fit: cover;
 }
 
 .overlay {
@@ -101,7 +96,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.5); /* Escurece o fundo do vídeo */
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .content {
@@ -110,48 +105,46 @@ html, body {
 
 .logo {
     max-width: 400px;
-    height: auto; /* Garante que a altura do logo seja ajustada proporcionalmente */
+    height: auto;
 }
 
-/* Estilo para a seção Sobre a Banda */
 .about-section {
     padding: 40px 20px;
-    background-color: rgb(10, 12, 13); /* Cor de fundo suave */
+    background-color: rgb(10, 12, 13);
     text-align: center;
 }
 
 .about-container {
-    max-width: 800px; /* Largura máxima para a seção */
-    margin: 0 auto; /* Centraliza a seção na página */
-    padding: 0 20px; /* Espaçamento horizontal interno */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .about-content h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #fff; /* Cor do texto */
+    color: #fff;
 }
 
 .about-content p {
     font-size: 1.1rem;
     margin-bottom: 30px;
-    color: #fff; /* Cor do texto */
+    color: #fff;
     line-height: 1.6;
 }
 
-/* Estilo para a seção Shows */
 #shows-section {
     padding: 20px;
     color: #fff;
     background-color: rgb(12, 15, 17);
-    box-sizing: border-box; /* Inclui padding no cálculo da largura */
+    box-sizing: border-box;
     text-align: center;
 }
 
 .image-container {
     display: flex;
-    justify-content: center; /* Alinha horizontalmente ao centro */
-    height: 40vh; /* Ajuste conforme necessário */
+    justify-content: center;
+    height: 40vh;
 }
 
 img {
@@ -159,14 +152,13 @@ img {
     height: auto;
 }
 
-/* Estilo para o formulário de inscrição */
 #mc_embed_signup {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
     padding: 20px;
-    max-width: 500px; /* Define uma largura máxima para o formulário */
+    max-width: 500px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -175,22 +167,22 @@ img {
     width: 100%;
     margin-bottom: 10px;
     display: flex;
-    justify-content: center; /* Centraliza os itens dentro da linha */
+    justify-content: center;
 }
 
 input[type="email"] {
     width: 100%;
-    max-width: 400px; /* Define uma largura máxima para o campo de entrada */
+    max-width: 400px;
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ddd;
     border-radius: 4px;
-    box-sizing: border-box; /* Inclui padding no cálculo da largura */
+    box-sizing: border-box;
 }
 
 button {
     width: 100%;
-    max-width: 400px; /* Define uma largura máxima para o botão */
+    max-width: 400px;
     padding: 10px;
     font-size: 1rem;
     background-color: #000;
@@ -204,66 +196,88 @@ button:hover {
     background-color: #333;
 }
 
-/* Estilo para mensagens de erro */
 .error-message {
     color: red;
     font-size: 0.875rem;
-    display: none; /* Oculta a mensagem de erro por padrão */
+    display: none;
 }
 
 .footer {
-    background-color: #000; /* Cor de fundo do rodapé */
-    color: #fff; /* Cor do texto */
-    padding: 5px; /* Espaçamento interno */
-    text-align: center; /* Centraliza o texto horizontalmente */
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
 }
 
 .footer-container {
-    max-width: 1200px; /* Largura máxima do conteúdo */
-    margin: 0 auto; /* Centraliza o container */
-    padding: 0 10px; /* Espaçamento horizontal interno */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     margin: 0;
 }
 
+.footer-icon {
+    position: absolute;
+    left: 10px;
+    display: inline-block;
+}
+
+.footer-icon img {
+    width: 80px;
+    transition: transform 0.3s, fill 0.3s;
+}
+
+.footer-icon:hover img {
+    transform: scale(1.2);
+    fill: #ddd;
+}
+
 .footer a {
-    color: #fff; /* Cor dos links */
-    text-decoration: none; /* Remove sublinhado dos links */
+    color: #fff;
+    text-decoration: none;
 }
 
 .footer a:hover {
-    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+    text-decoration: underline;
 }
 
-/* Estilo para o ícone flutuante */
+.footer-content p {
+    margin: 0;
+}
+
 .floating-icon {
     z-index: 2000000;
     position: fixed;
-    bottom: 20px; /* Distância do fundo da tela */
-    right: 20px;  /* Distância da borda direita da tela */
-    width: 60px; /* Largura do ícone */
-    height: 60px; /* Altura do ícone */
-    background-color: #d1c342; /* Cor de fundo do ícone */
-    color: #fff; /* Cor do ícone */
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #d1c342;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%; /* Torna o ícone redondo */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
-    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .floating-icon:hover {
-    background-color: #333; /* Cor de fundo ao passar o mouse */
-    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+    background-color: #333;
+    transform: scale(1.1);
 }
 
 .floating-icon .icon-image {
     max-width: 100%;
-    height: auto; /* Garante que a altura da imagem seja ajustada proporcionalmente */
+    height: auto;
 }
 
 html {
@@ -272,47 +286,47 @@ html {
 
 .events-section {
     padding: 20px;
-    background-color: #060404; /* Cor de fundo clara */
+    background-color: #060404;
 }
 
 .events-widget {
-    max-width: 800px; /* Largura reduzida */
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .event-item {
     display: flex;
-    justify-content: space-between; /* Espaça os itens entre o texto e o botão */
-    align-items: center; /* Alinha verticalmente */
-    padding: 16px 20px; /* Ajusta o preenchimento */
-    margin-bottom: 15px; /* Espaçamento entre eventos */
-    background-color: #000000; /* Cor de fundo branca para cada evento */
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    margin-bottom: 15px;
+    background-color: #000000;
     font-family: "Avenir", Sans-serif;
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1.5px;
-    color: #ffffff; /* Cor do texto padrão */
-    border-radius: 8px; /* Bordas arredondadas mais suaves */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    position: relative; /* Para garantir o alinhamento correto dos itens */
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .event-details {
     text-decoration: none;
-    color: inherit; /* Usa a cor do texto padrão */
+    color: inherit;
     display: flex;
     flex-direction: column;
-    flex: 1; /* Ocupa o espaço restante */
-    margin-right: 20px; /* Espaçamento entre o texto e o botão */
-    position: absolute; /* Remove o impacto do alinhamento do botão */
-    left: 20px; /* Alinha o texto à esquerda */
+    flex: 1;
+    margin-right: 20px;
+    position: absolute;
+    left: 20px;
     top: 50%;
-    transform: translateY(-50%); /* Centraliza verticalmente o texto */
+    transform: translateY(-50%);
 }
 
 .event-date {
     font-weight: bold;
-    color: #000; /* Cor escura para destaque */
+    color: #000;
     margin-top: 5px;
     margin-bottom: 0px;
 }
@@ -326,23 +340,23 @@ html {
 }
 
 .event-location {
-    color: #666; /* Cor cinza clara para a localização */
+    color: #666;
 }
 
 .event-tickets {
     padding: 10px 16px;
-    border: none; /* Remove a borda */
+    border: none;
     border-radius: 4px;
-    font-weight: bold; /* Destaca o texto */
+    font-weight: bold;
     text-decoration: none;
     text-align: center;
     background-color: #333;
     color: #ffffff;
     display: inline-block;
-    margin-left: auto; /* Garante que o botão esteja no canto direito */
+    margin-left: auto;
 }
 
 .event-tickets:hover {
     opacity: 0.8;
-    transition: opacity 0.3s ease; /* Transição suave */
+    transition: opacity 0.3s ease;
 }

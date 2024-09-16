@@ -5,20 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klown Band</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Inclua o Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
     <header>
         <div class="header-content">
-            <!-- Links de Navegação -->
             <nav class="nav-menu">
                 <ul>
                     <li><a href="#about-section">SOBRE</a></li>
                     <li><a href="#shows-section">SHOWS</a></li>
                 </ul>
             </nav>
-            <!-- Ícone do Instagram -->
             <div class="social-icons">
                 <a href="https://www.instagram.com/klown_band" target="_blank" rel="noopener" class="instagram-icon">
                     <i class="fab fa-instagram"></i>
@@ -27,28 +24,25 @@
         </div>
     </header>
 
-    <!-- Ícone Flutuante para Reproduzir Som -->
     <div class="floating-icon" id="play-sound">
-       <img src="./corn.png" alt="Play Sound" class="icon-image">
+       <img src="./pictures/corn.png" alt="Play Sound" class="icon-image">
     </div>
-    <audio id="sound" src="./twist.mp3"></audio> <!-- Substitua pelo caminho do seu arquivo de áudio -->
+    <audio id="sound" src="./audios/twist.mp3"></audio>
 
-    <!-- Seção de vídeo de fundo -->
     <section class="background-video-section">
         <div class="background-video-container">
             <video class="background-video" autoplay muted playsinline loop>
-                <source src="./klownbackground.mp4" type="video/mp4">
+                <source src="./videos/klownbackground.mp4" type="video/mp4">
                 Seu navegador não suporta o elemento de vídeo.
             </video>
         </div>
         <div class="overlay">
             <div class="content">
-                <img src="./klown.png" alt="Korn Logo" class="logo">
+                <img src="./pictures/klown.png" alt="Korn Logo" class="logo">
             </div>
         </div>
     </section>
     
-    <!-- Seção Sobre a Banda -->
     <section id="about-section" class="about-section">
         <div class="about-container">
             <div class="about-content">
@@ -75,11 +69,9 @@
         </div>
 </section>
 
-    
-    <!-- Seção Shows -->
     <section id="shows-section">
         <div class="image-container">
-            <img src="./chalesco.png" alt="Example Logo">
+            <img src="./pictures/chalesco.png" alt="Example Logo">
         </div>
         <h2>Receba os Próximos Shows</h2>
         <div id="mc_embed_signup">
@@ -111,18 +103,19 @@
         </script>
     </section>
 
-    <!-- Rodapé -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-content">
+                <div class="footer-icon" id="easteregg-icon">
+                    <img src="./pictures/snake.svg" alt="easteregg">
+                    <audio id="easteregg-sound" src="./audios/easteregg.mp3"></audio>
+                </div>
                 <p>
                     © Klown - contato@klownband.com
                 </p>
             </div>
         </div>
     </footer>
-
-    <!-- Script para o ícone flutuante -->
     <script src="script.js"></script>
 </body>
 </html>
